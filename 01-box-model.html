@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link
+     rel ="stylesheet"
+    href="https://meyerweb.com/eric/tools/css/reset/reset.css"  -->
+
+    <link
+    rel="stylesheet"
+    herf="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    
+    
+        <!-- *{
+            margin: 0;
+            padding: 0; 
+
+        } -->
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: #fa0;
+
+            /* 內距*/
+            /*四邊相同*/
+            /* padding:20px */
+            /*上下 左右*/
+            /* padding: 10px 20px; */
+
+            /* padding: 10px 20px 30px 40px; */
+            /*上面的屬性跟下面的屬性不同所以會以上面改變為主，但如果屬性相同時最下面的會覆蓋。*/
+            padding-top: 20px;
+
+            padding-right:30px;
+
+            padding-bottom: 30px;
+
+            padding-left: 10px;
+
+            /*邊框*/
+            border:20px solid #270505;
+            /* border-width: 1px 2px 3px 4px;
+            border-style:doteted;
+            border-color:red;
+            border-top:5px solid #000;
+            border-right:6px dotted #f0a;
+            border-bottom:7px dashed green;
+            
+            border-left:8px double blue;
+
+            /*圓角*/
+            border-radius: 1px;
+            /*左上 右上 右下 左下*/
+            /* border-radius:30px 30px 30px 30px;  */
+
+            /*外距*/
+            margin-top: 10px;
+            margin-right:20px;
+            margin-bottom:30px;
+            margin-left:40px;
+
+            /*水平居中:auto分配視窗剩餘空間*/
+            margin:0 auto;
+
+        }
+        .box:nth-child(3){
+            background-color: #f0a;
+            margin-left: 0;
+        }
+        .box:nth-child(4){
+            background-color: rgb(56, 30, 9);
+            margin:unset;
+            margin-left:auto;
+        }
+            
+        .border-box{
+        /* 以box-sizing:content-box */
+        /* 以border為寬高尺寸計算 */
+        box-sizing:border-box;
+        width:300px;
+        height:300px;
+        }
+
+            
+
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1>hi</h1>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>

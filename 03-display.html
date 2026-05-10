@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            pading:0;
+            margin:0;
+        }
+        .block-element{
+            width:200px;
+            height:200px;
+            background-color: #fa0;
+            display:block;
+        }
+        .inline-element{
+           /*設定長寬高無效因為有inline，inline根據文字設定寬高*/
+            width:200px;
+            height:200px;
+            background-color: rgb(105, 165, 162);
+            display:inline;
+            padding-left: 10px;
+            padding-right:10px;
+        }
+       .inline-block{
+           /*可以設定長寬高，外距也可以設定*/
+            width:200px;
+            height:200px;
+            background-color: rgb(173, 106, 17);
+            display:inline-block;
+            padding-left: 10px;
+            padding-right:10px;
+        } 
+        .flex-box{
+            display:flex;
+            background-color: blue;
+            width:300px;
+            height:200px;
+            border:1px solid red;
+        }
+        .flex-item{
+            background-color: blue;
+            display:flex;
+            width: 300px;
+            height:200px;
+            border:1px solid red;
+        }
+        p{
+            font-size:32px;
+        }
+        span{
+            font-size:12px;
+            vertical-aliqn:top;
+
+        }
+        .img.container{
+            width:100px;
+            border:1px solid red;
+            
+        }
+
+        .img-container img{
+            width:100%;
+            vertical-align:top;
+            display:flex;
+            flex-direction:row;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="block-element">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores inventore vitae facere earum! Tempore veniam necessitatibus nisi laborum non obcaecati dolores nemo? A, necessitatibus? Obcaecati ipsum odit velit quidem corrupti.
+    </div>
+    <div class="inline-element">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores aspernatur odit vitae, perspiciatis incidunt ratione doloremque iusto voluptates quos error sint explicabo numquam, 
+    </div>
+    
+    <div class="inline-block"></div>
+    <div class="inline-block"></div>
+    <div class="flex-box"></div>
+    <div class="flex-item"></div>
+    
+    <!--vertical-align inline系列的元素-->
+    <p>文字<span>123</span>文字</p>
+    <p>文字<span>123</span>文字</p>
+    <div class="img-container">
+    <img src="/67d24bb59ebb4d745da692705a63b1d0.gif" alt="圖片">
+    <img src="/67d24bb59ebb4d745da692705a63b1d0.gif" alt="圖片">
+    </div>
+</body>
+</html>
